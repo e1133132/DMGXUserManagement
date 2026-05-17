@@ -1,4 +1,3 @@
-#Requires -RunAsAdministrator
 param(
     [string]$SiteName = $env:IIS_SITE_NAME,
     [string]$AppPoolName = $env:IIS_APP_POOL,
