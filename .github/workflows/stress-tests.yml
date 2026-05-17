@@ -1,0 +1,35 @@
+name: Stress Tests
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  stress-tests:
+    name: Stress Tests
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Run stress tests
+        run: >
+          dotnet test tests/UserManagement.StressTests/UserManagement.StressTests.csproj
+          --configuration Release
+          --verbosity normal
+          --logger "trx;LogFileName=stress-tests.trx"
+
+      - name: Upload stress test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: stress-test-results
+          path: '**/TestResults/**'

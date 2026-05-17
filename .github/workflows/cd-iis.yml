@@ -1,0 +1,41 @@
+name: CD - Deploy to IIS
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  PROJECT: src/UserManagement.Api/UserManagement.Api.csproj
+  PUBLISH_DIR: ./publish
+
+jobs:
+  deploy:
+    name: Deploy to IIS
+    runs-on: [self-hosted, Windows, IIS]
+    needs: []
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Publish application
+        run: >
+          dotnet publish ${{ env.PROJECT }}
+          -c Release
+          -o ${{ env.PUBLISH_DIR }}
+          --self-contained false
+
+      - name: Deploy to IIS
+        shell: pwsh
+        env:
+          IIS_SITE_NAME: ${{ vars.IIS_SITE_NAME }}
+          IIS_APP_POOL: ${{ vars.IIS_APP_POOL }}
+          IIS_PHYSICAL_PATH: ${{ vars.IIS_PHYSICAL_PATH }}
+          CONNECTION_STRING: ${{ secrets.IIS_CONNECTION_STRING }}
+        run: ./deploy/deploy-to-iis.ps1
