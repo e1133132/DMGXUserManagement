@@ -37,7 +37,7 @@ jobs:
           --self-contained false
 
       - name: Deploy to IIS
-        shell: pwsh
+        shell: powershell
         env:
           IIS_SITE_NAME: ${{ vars.IIS_SITE_NAME }}
           IIS_APP_POOL: ${{ vars.IIS_APP_POOL }}
