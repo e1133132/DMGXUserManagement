@@ -21,8 +21,13 @@ jobs:
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
+        env:
+          DOTNET_INSTALL_DIR: D:\dotnet
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Check dotnet
+        run: dotnet --info
 
       - name: Publish application
         run: >
