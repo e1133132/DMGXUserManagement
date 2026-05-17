@@ -67,5 +67,8 @@ if (-not (Test-Path (Join-Path $PhysicalPath "web.config"))) {
 $logsDir = Join-Path $PhysicalPath "logs"
 if (-not (Test-Path $logsDir)) { New-Item -ItemType Directory -Path $logsDir | Out-Null }
 
+$dataDir = Join-Path $PhysicalPath "data"
+if (-not (Test-Path $dataDir)) { New-Item -ItemType Directory -Path $dataDir | Out-Null }
+
 Start-WebAppPool -Name $AppPoolName
 Write-Host "Deployment completed. Site: http://localhost:8080 (default port if newly created)"
