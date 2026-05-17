@@ -1,0 +1,89 @@
+name: SonarQube Scan
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+env:
+  DOTNET_VERSION: '8.0.x'
+  SOLUTION: UserManagement.sln
+
+jobs:
+  sonarqube:
+    name: SonarQube Scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: zulu
+          java-version: 17
+
+      - name: Cache SonarQube packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.sonar/cache
+          key: ${{ runner.os }}-sonar
+          restore-keys: ${{ runner.os }}-sonar
+
+      - name: Install SonarScanner for .NET
+        run: dotnet tool install --global dotnet-sonarscanner
+
+      - name: SonarScanner begin
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_ORGANIZATION: ${{ secrets.SONAR_ORGANIZATION }}
+        run: |
+          export SONAR_HOST_URL="${SONAR_HOST_URL:-https://sonarcloud.io}"
+
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            EXTRA_ARGS="/d:sonar.pullrequest.key=${{ github.event.pull_request.number }} /d:sonar.pullrequest.branch=${{ github.head_ref }} /d:sonar.pullrequest.base=${{ github.base_ref }}"
+          else
+            EXTRA_ARGS="/d:sonar.branch.name=${{ github.ref_name }}"
+          fi
+
+          if [ -n "$SONAR_ORGANIZATION" ]; then
+            dotnet sonarscanner begin \
+              /o:"$SONAR_ORGANIZATION" \
+              /d:sonar.token="$SONAR_TOKEN" \
+              /d:sonar.host.url="$SONAR_HOST_URL" \
+              $EXTRA_ARGS
+          else
+            dotnet sonarscanner begin \
+              /d:sonar.token="$SONAR_TOKEN" \
+              /d:sonar.host.url="$SONAR_HOST_URL" \
+              $EXTRA_ARGS
+          fi
+
+      - name: Build and test (with coverage)
+        run: |
+          dotnet restore ${{ env.SOLUTION }}
+          dotnet build ${{ env.SOLUTION }} --configuration Release --no-restore
+          dotnet test tests/UserManagement.UnitTests/UserManagement.UnitTests.csproj \
+            --configuration Release --no-build \
+            --logger "trx;LogFileName=unit-tests.trx" \
+            --collect:"XPlat Code Coverage" \
+            --results-directory TestResults
+          dotnet test tests/UserManagement.IntegrationTests/UserManagement.IntegrationTests.csproj \
+            --configuration Release --no-build \
+            --logger "trx;LogFileName=integration-tests.trx" \
+            --collect:"XPlat Code Coverage" \
+            --results-directory TestResults
+
+      - name: SonarScanner end
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
