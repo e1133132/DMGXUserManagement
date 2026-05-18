@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [main, master, develop]
+    branches: [main, master, develop,cbc]
   pull_request:
-    branches: [main, master, develop]
+    branches: [main, master, develop,cbc]
 
 env:
   DOTNET_VERSION: '8.0.x'
