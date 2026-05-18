@@ -22,6 +22,7 @@ public class UsersController(IUserService userService) : ControllerBase
         return user is null ? NotFound() : Ok(user);
     }
 
+
     [HttpPost]
     [ProducesResponseType(typeof(UserResponse), StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
