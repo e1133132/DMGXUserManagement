@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
+    <CoverletOutputFormat>cobertura</CoverletOutputFormat>
+    <ExcludeByFile>**/Migrations/**,**/Program.cs</ExcludeByFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\UserManagement.Api\UserManagement.Api.csproj" />
     <ProjectReference Include="..\..\src\UserManagement.Core\UserManagement.Core.csproj" />
     <ProjectReference Include="..\..\src\UserManagement.Infrastructure\UserManagement.Infrastructure.csproj" />
   </ItemGroup>
