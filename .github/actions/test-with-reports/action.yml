@@ -23,20 +23,27 @@ runs:
   using: composite
   steps:
     - name: Run tests
+      if: inputs.collect-coverage != 'true'
       shell: bash
       run: |
-        COVERAGE_FLAG=""
-        if [ "${{ inputs.collect-coverage }}" = "true" ]; then
-          COVERAGE_FLAG='--collect:"XPlat Code Coverage"'
-        fi
+        dotnet test "${{ inputs.test-project }}" \
+          --configuration Release \
+          --verbosity normal \
+          --results-directory "TestResults/${{ inputs.results-subdir }}" \
+          --logger "trx;LogFileName=test-results.trx" \
+          --logger "html;LogFileName=test-results.html"
 
+    - name: Run tests with coverage
+      if: inputs.collect-coverage == 'true'
+      shell: bash
+      run: |
         dotnet test "${{ inputs.test-project }}" \
           --configuration Release \
           --verbosity normal \
           --results-directory "TestResults/${{ inputs.results-subdir }}" \
           --logger "trx;LogFileName=test-results.trx" \
           --logger "html;LogFileName=test-results.html" \
-          $COVERAGE_FLAG
+          --collect:"XPlat Code Coverage"
 
     - name: Generate coverage HTML report
       if: inputs.collect-coverage == 'true'
