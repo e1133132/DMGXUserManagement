@@ -19,7 +19,9 @@ public class WebAppFactory : WebApplicationFactory<Program>
         {
             var descriptor = services.SingleOrDefault(d => d.ServiceType == typeof(DbContextOptions<AppDbContext>));
             if (descriptor is not null)
+            {
                 services.Remove(descriptor);
+            }
 
             _connection = new SqliteConnection("DataSource=:memory:");
             _connection.Open();
@@ -40,7 +42,10 @@ public class WebAppFactory : WebApplicationFactory<Program>
     protected override void Dispose(bool disposing)
     {
         if (disposing)
+        {
             _connection?.Dispose();
+        }
+
         base.Dispose(disposing);
     }
 }

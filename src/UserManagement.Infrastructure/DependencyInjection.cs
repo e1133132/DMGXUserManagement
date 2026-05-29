@@ -19,9 +19,13 @@ public static class DependencyInjection
         services.AddDbContext<AppDbContext>(options =>
         {
             if (string.Equals(provider, "SqlServer", StringComparison.OrdinalIgnoreCase))
+            {
                 options.UseSqlServer(connectionString);
+            }
             else
+            {
                 options.UseSqlite(connectionString);
+            }
         });
 
         services.AddScoped<IUserRepository, UserRepository>();

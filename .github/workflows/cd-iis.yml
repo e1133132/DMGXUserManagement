@@ -29,6 +29,14 @@ jobs:
       - name: Restore
         run: dotnet restore ${{ env.SOLUTION }}
 
+      - name: Run lint with reports
+        uses: ./.github/actions/lint-with-reports
+        with:
+          solution: ${{ env.SOLUTION }}
+          results-subdir: cd
+          artifact-name: cd-lint-reports
+          check-name: CD Lint Results
+
       - name: Build
         run: dotnet build ${{ env.SOLUTION }} --configuration Release --no-restore
 

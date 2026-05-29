@@ -10,10 +10,14 @@ public class UserService(IUserRepository repository) : IUserService
     {
         var email = request.Email.Trim().ToLowerInvariant();
         if (string.IsNullOrWhiteSpace(email))
+        {
             throw new ArgumentException("Email is required.", nameof(request));
+        }
 
         if (await repository.GetByEmailAsync(email, cancellationToken) is not null)
+        {
             throw new InvalidOperationException($"User with email '{email}' already exists.");
+        }
 
         var user = new User
         {
@@ -32,15 +36,21 @@ public class UserService(IUserRepository repository) : IUserService
     {
         var user = await repository.GetByIdAsync(id, cancellationToken);
         if (user is null)
+        {
             return null;
+        }
 
         if (user.IsLocked)
+        {
             throw new InvalidOperationException("Cannot update a locked user. Unlock first.");
+        }
 
         var email = request.Email.Trim().ToLowerInvariant();
         var existing = await repository.GetByEmailAsync(email, cancellationToken);
         if (existing is not null && existing.Id != id)
+        {
             throw new InvalidOperationException($"Email '{email}' is already in use.");
+        }
 
         user.Email = email;
         user.DisplayName = request.DisplayName.Trim();
@@ -54,7 +64,9 @@ public class UserService(IUserRepository repository) : IUserService
     {
         var user = await repository.GetByIdAsync(id, cancellationToken);
         if (user is null)
+        {
             return null;
+        }
 
         user.IsLocked = true;
         user.UpdatedAtUtc = DateTime.UtcNow;
@@ -66,7 +78,9 @@ public class UserService(IUserRepository repository) : IUserService
     {
         var user = await repository.GetByIdAsync(id, cancellationToken);
         if (user is null)
+        {
             return null;
+        }
 
         user.IsLocked = false;
         user.UpdatedAtUtc = DateTime.UtcNow;

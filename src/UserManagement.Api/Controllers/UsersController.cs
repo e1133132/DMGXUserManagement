@@ -54,7 +54,9 @@ public class UsersController(IUserService userService) : ControllerBase
         {
             var user = await userService.UpdateAsync(id, request, cancellationToken);
             if (user is null)
+            {
                 return NotFound();
+            }
 
             return Ok(user);
         }

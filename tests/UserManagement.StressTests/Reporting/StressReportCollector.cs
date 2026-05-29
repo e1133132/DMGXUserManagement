@@ -20,14 +20,18 @@ public class StressReportCollector : IDisposable
     public void Dispose()
     {
         lock (_lock)
+        {
             WriteReports();
+        }
     }
 
     private void WriteReports()
     {
         List<StressTestResult> snapshot;
         lock (_lock)
+        {
             snapshot = _results.ToList();
+        }
 
         var outputDir = ResolveOutputDirectory();
         Directory.CreateDirectory(outputDir);
@@ -105,7 +109,9 @@ public class StressReportCollector : IDisposable
         var repoRoot = FindRepoRoot();
 
         if (string.IsNullOrWhiteSpace(configured))
+        {
             return Path.Combine(repoRoot, "TestResults", "stress");
+        }
 
         return Path.IsPathRooted(configured)
             ? configured
@@ -118,7 +124,10 @@ public class StressReportCollector : IDisposable
         while (!string.IsNullOrEmpty(dir))
         {
             if (File.Exists(Path.Combine(dir, "UserManagement.sln")))
+            {
                 return dir;
+            }
+
             dir = Directory.GetParent(dir)?.FullName ?? string.Empty;
         }
 

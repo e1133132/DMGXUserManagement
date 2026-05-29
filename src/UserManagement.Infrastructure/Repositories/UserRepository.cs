@@ -33,7 +33,9 @@ public class UserRepository(AppDbContext db) : IUserRepository
     {
         var user = await db.Users.FindAsync([id], cancellationToken);
         if (user is null)
+        {
             return false;
+        }
 
         db.Users.Remove(user);
         return await db.SaveChangesAsync(cancellationToken) > 0;

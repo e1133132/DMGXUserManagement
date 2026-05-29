@@ -1,0 +1,97 @@
+name: Run lint with reports
+description: Run dotnet format style/analyzers checks and upload JSON/HTML lint reports.
+
+inputs:
+  solution:
+    description: Path to the solution file
+    required: true
+  results-subdir:
+    description: Subdirectory under LintResults for this run
+    required: true
+  artifact-name:
+    description: Name of the uploaded artifact
+    required: true
+  check-name:
+    description: Title shown in GitHub Checks for lint results
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Run dotnet format lint checks
+      id: lint
+      shell: bash
+      run: |
+        LINT_DIR="${{ github.workspace }}/LintResults/${{ inputs.results-subdir }}"
+        mkdir -p "$LINT_DIR"
+
+        STYLE_EXIT=0
+        ANALYZERS_EXIT=0
+
+        dotnet format "${{ inputs.solution }}" style \
+          --report "$LINT_DIR/style-report.json" \
+          --verify-no-changes \
+          --verbosity normal \
+          2>&1 | tee "$LINT_DIR/style.log" || STYLE_EXIT=$?
+
+        dotnet format "${{ inputs.solution }}" analyzers \
+          --report "$LINT_DIR/analyzers-report.json" \
+          --verify-no-changes \
+          --severity warn \
+          --verbosity normal \
+          2>&1 | tee "$LINT_DIR/analyzers.log" || ANALYZERS_EXIT=$?
+
+        python3 "${{ github.action_path }}/generate-lint-report.py" \
+          "$LINT_DIR" "$STYLE_EXIT" "$ANALYZERS_EXIT"
+
+        echo "style_exit=$STYLE_EXIT" >> "$GITHUB_OUTPUT"
+        echo "analyzers_exit=$ANALYZERS_EXIT" >> "$GITHUB_OUTPUT"
+
+        if [ "$STYLE_EXIT" -ne 0 ] || [ "$ANALYZERS_EXIT" -ne 0 ]; then
+          echo "passed=false" >> "$GITHUB_OUTPUT"
+          exit 1
+        fi
+        echo "passed=true" >> "$GITHUB_OUTPUT"
+
+    - name: Prepare lint check summary
+      id: summary
+      if: always()
+      shell: bash
+      run: |
+        SUMMARY="${{ github.workspace }}/LintResults/${{ inputs.results-subdir }}/lint-summary.md"
+        DELIM="lint_summary_$(openssl rand -hex 8)"
+        echo "text<<${DELIM}" >> "$GITHUB_OUTPUT"
+        if [ -f "$SUMMARY" ]; then
+          cat "$SUMMARY" >> "$GITHUB_OUTPUT"
+        else
+          echo "Lint step failed before report generation." >> "$GITHUB_OUTPUT"
+        fi
+        echo "${DELIM}" >> "$GITHUB_OUTPUT"
+
+    - name: Publish lint check
+      uses: LouisBrunner/checks-action@v2.0.2
+      if: always()
+      with:
+        token: ${{ github.token }}
+        name: ${{ inputs.check-name }}
+        conclusion: ${{ steps.lint.outputs.passed == 'true' && 'success' || 'failure' }}
+        output: ${{ steps.summary.outputs.text }}
+
+    - name: Add lint report to job summary
+      if: always()
+      shell: bash
+      run: |
+        SUMMARY="${{ github.workspace }}/LintResults/${{ inputs.results-subdir }}/lint-summary.md"
+        if [ -f "$SUMMARY" ]; then
+          cat "$SUMMARY" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Download artifact **${{ inputs.artifact-name }}** for \`lint-report.html\` and JSON details." >> "$GITHUB_STEP_SUMMARY"
+        fi
+
+    - name: Upload lint reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.artifact-name }}
+        if-no-files-found: error
+        path: LintResults/${{ inputs.results-subdir }}/

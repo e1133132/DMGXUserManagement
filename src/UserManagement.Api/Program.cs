@@ -10,7 +10,9 @@ builder.Services.AddInfrastructure(builder.Configuration);
 var app = builder.Build();
 
 if (!app.Environment.IsEnvironment("Testing"))
+{
     await app.Services.MigrateDatabaseAsync();
+}
 
 if (app.Environment.IsDevelopment())
 {

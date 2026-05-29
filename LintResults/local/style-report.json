@@ -1,0 +1,1316 @@
+[
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "96f43f8c-1b09-443b-a9bc-9244ce56cc05"
+    },
+    "FileName": "Program.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Program.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 12,
+        "CharNumber": 1,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 56,
+        "CharNumber": 13,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 13,
+        "CharNumber": 66,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 19,
+        "CharNumber": 51,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 29,
+        "CharNumber": 51,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 51,
+        "CharNumber": 51,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 70,
+        "CharNumber": 51,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 79,
+        "CharNumber": 51,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "719bc3eb-7e5a-4838-8055-15aa13d152c4"
+      },
+      "Id": "b3a49327-fd8b-4c12-92ec-25d110ab0563"
+    },
+    "FileName": "UsersController.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Api\\Controllers\\UsersController.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 88,
+        "CharNumber": 38,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 12,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 15,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 34,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 37,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 42,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 56,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "2e446ffb-1f17-4c1e-b2e9-13a8231953c9"
+      },
+      "Id": "5785f0c1-66b7-4636-9665-afd94b6ac266"
+    },
+    "FileName": "UserService.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Core\\Services\\UserService.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 68,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9c7bab95-608c-46a8-9ddc-fbf27add1d38"
+      },
+      "Id": "fc3c374b-b836-4a29-a3e7-2f59e3ea9942"
+    },
+    "FileName": "20260517113536_InitialCreate.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Infrastructure\\Migrations\\20260517113536_InitialCreate.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 6,
+        "CharNumber": 11,
+        "DiagnosticId": "IDE0161",
+        "FormatDescription": "warning IDE0161: \u8F6C\u6362\u4E3A\u6587\u4EF6\u8303\u56F4\u9650\u5B9A\u7684 namespace"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9c7bab95-608c-46a8-9ddc-fbf27add1d38"
+      },
+      "Id": "39bd8a4d-08f8-403b-8231-e1c7613f8336"
+    },
+    "FileName": "DependencyInjection.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Infrastructure\\DependencyInjection.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 13,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9c7bab95-608c-46a8-9ddc-fbf27add1d38"
+      },
+      "Id": "39bd8a4d-08f8-403b-8231-e1c7613f8336"
+    },
+    "FileName": "DependencyInjection.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Infrastructure\\DependencyInjection.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 23,
+        "CharNumber": 13,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Celse\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "9c7bab95-608c-46a8-9ddc-fbf27add1d38"
+      },
+      "Id": "70989368-712f-43e3-8001-04eb39032bb7"
+    },
+    "FileName": "UserRepository.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\src\\UserManagement.Infrastructure\\Repositories\\UserRepository.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 35,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 33,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 44,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 56,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 64,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 76,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 84,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 97,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 111,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "96b08342-4656-4556-9a0a-eb04da138861"
+    },
+    "FileName": "UserRepositoryTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Repositories\\UserRepositoryTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 123,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 20,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 44,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 56,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 70,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 82,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 93,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 106,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 118,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 130,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 142,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 154,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 166,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 178,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "ebe33062-16a2-47b0-a6b0-1f413eef1b99"
+    },
+    "FileName": "UsersControllerTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Controllers\\UsersControllerTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 189,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "02d1c4e0-bbe7-4a81-8b9a-43f5a4e3c36e"
+    },
+    "FileName": "DependencyInjectionTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Infrastructure\\DependencyInjectionTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 58,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 17,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 32,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 39,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 49,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 69,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 81,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 98,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 123,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 135,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 146,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 160,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 182,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 196,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 208,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 222,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "a07c423a-4f0f-49f8-a07c-2f92f1955365"
+      },
+      "Id": "f7e3851a-bf46-4618-b720-1f91a7d262d2"
+    },
+    "FileName": "UserServiceTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.UnitTests\\Services\\UserServiceTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 234,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "5b8fee1e-bce1-4fe7-bfdc-db5d766ea726"
+      },
+      "Id": "66f444d7-daf1-40a8-9495-6d112aeebc09"
+    },
+    "FileName": "WebAppFactory.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.IntegrationTests\\WebAppFactory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 13,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "5b8fee1e-bce1-4fe7-bfdc-db5d766ea726"
+      },
+      "Id": "66f444d7-daf1-40a8-9495-6d112aeebc09"
+    },
+    "FileName": "WebAppFactory.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.IntegrationTests\\WebAppFactory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 42,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "5b8fee1e-bce1-4fe7-bfdc-db5d766ea726"
+      },
+      "Id": "dc38e609-5535-4a57-b1ed-bb8e547c37b3"
+    },
+    "FileName": "UsersApiTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.IntegrationTests\\UsersApiTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 12,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "5b8fee1e-bce1-4fe7-bfdc-db5d766ea726"
+      },
+      "Id": "dc38e609-5535-4a57-b1ed-bb8e547c37b3"
+    },
+    "FileName": "UsersApiTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.IntegrationTests\\UsersApiTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 48,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "aff8b897-2b72-4062-983a-42ff71e6b255"
+    },
+    "FileName": "StressReportCollector.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\Reporting\\StressReportCollector.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 22,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Clock\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "aff8b897-2b72-4062-983a-42ff71e6b255"
+    },
+    "FileName": "StressReportCollector.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\Reporting\\StressReportCollector.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 29,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Clock\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "aff8b897-2b72-4062-983a-42ff71e6b255"
+    },
+    "FileName": "StressReportCollector.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\Reporting\\StressReportCollector.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 107,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "aff8b897-2b72-4062-983a-42ff71e6b255"
+    },
+    "FileName": "StressReportCollector.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\Reporting\\StressReportCollector.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 120,
+        "CharNumber": 13,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "7eeea978-ba97-406c-ba97-bde55177f136"
+    },
+    "FileName": "StressWebAppFactory.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\StressWebAppFactory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 21,
+        "CharNumber": 13,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "7eeea978-ba97-406c-ba97-bde55177f136"
+    },
+    "FileName": "StressWebAppFactory.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\StressWebAppFactory.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 42,
+        "CharNumber": 9,
+        "DiagnosticId": "IDE0011",
+        "FormatDescription": "warning IDE0011: \u5411 \u201Cif\u201D \u8BED\u53E5\u6DFB\u52A0\u5927\u62EC\u53F7\u3002"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "8a564e25-ed02-41d5-ae5b-ae7cade7cecd"
+    },
+    "FileName": "ApiStressTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\ApiStressTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 14,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  },
+  {
+    "DocumentId": {
+      "ProjectId": {
+        "Id": "548640c2-c79b-4a74-947b-7e7c0e3b6544"
+      },
+      "Id": "8a564e25-ed02-41d5-ae5b-ae7cade7cecd"
+    },
+    "FileName": "ApiStressTests.cs",
+    "FilePath": "C:\\Users\\lenovo\\Desktop\\Master_Course\\internship\\UserManagementApi\\tests\\UserManagement.StressTests\\ApiStressTests.cs",
+    "FileChanges": [
+      {
+        "LineNumber": 67,
+        "CharNumber": 23,
+        "DiagnosticId": "IDE1006",
+        "FormatDescription": "warning IDE1006: \u547D\u540D\u89C4\u5219\u51B2\u7A81: \u7F3A\u5C11\u540E\u7F00: Async"
+      }
+    ]
+  }
+]
