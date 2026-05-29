@@ -18,6 +18,10 @@ inputs:
     description: Whether to collect code coverage and generate an HTML report
     required: false
     default: 'false'
+  generate-stress-report:
+    description: Set true for stress tests to emit performance JSON/HTML reports
+    required: false
+    default: 'false'
 
 runs:
   using: composite
@@ -25,22 +29,26 @@ runs:
     - name: Run tests
       if: inputs.collect-coverage != 'true'
       shell: bash
+      env:
+        TEST_RESULTS_DIR: ${{ github.workspace }}/TestResults/${{ inputs.results-subdir }}
       run: |
         dotnet test "${{ inputs.test-project }}" \
           --configuration Release \
           --verbosity normal \
-          --results-directory "TestResults/${{ inputs.results-subdir }}" \
+          --results-directory "$TEST_RESULTS_DIR" \
           --logger "trx;LogFileName=test-results.trx" \
           --logger "html;LogFileName=test-results.html"
 
     - name: Run tests with coverage
       if: inputs.collect-coverage == 'true'
       shell: bash
+      env:
+        TEST_RESULTS_DIR: ${{ github.workspace }}/TestResults/${{ inputs.results-subdir }}
       run: |
         dotnet test "${{ inputs.test-project }}" \
           --configuration Release \
           --verbosity normal \
-          --results-directory "TestResults/${{ inputs.results-subdir }}" \
+          --results-directory "$TEST_RESULTS_DIR" \
           --logger "trx;LogFileName=test-results.trx" \
           --logger "html;LogFileName=test-results.html" \
           --collect:"XPlat Code Coverage"
@@ -68,9 +76,23 @@ runs:
       with:
         name: ${{ inputs.artifact-name }}
         if-no-files-found: error
-        path: |
-          TestResults/${{ inputs.results-subdir }}/**/*.trx
-          TestResults/${{ inputs.results-subdir }}/**/*.html
+        path: TestResults/${{ inputs.results-subdir }}/
+
+    - name: Add stress report to job summary
+      if: always() && inputs.generate-stress-report == 'true'
+      shell: bash
+      run: |
+        REPORT="TestResults/${{ inputs.results-subdir }}/stress-performance-report.html"
+        if [ -f "$REPORT" ]; then
+          echo "## Stress performance report" >> "$GITHUB_STEP_SUMMARY"
+          echo "Download artifact **${{ inputs.artifact-name }}** and open \`stress-performance-report.html\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          cat "TestResults/${{ inputs.results-subdir }}/stress-performance-report.json" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+        else
+          echo "::warning::Stress performance report was not generated." >> "$GITHUB_STEP_SUMMARY"
+        fi
 
     - name: Upload coverage HTML report
       if: always() && inputs.collect-coverage == 'true'

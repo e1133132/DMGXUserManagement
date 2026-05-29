@@ -39,3 +39,4 @@ jobs:
           artifact-name: stress-test-reports
           check-name: Stress Test Results
           collect-coverage: 'false'
+          generate-stress-report: 'true'
