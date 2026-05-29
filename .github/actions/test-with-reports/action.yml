@@ -1,0 +1,81 @@
+name: Run tests with reports
+description: Run dotnet test, publish results to GitHub Checks, and upload TRX/coverage HTML artifacts.
+
+inputs:
+  test-project:
+    description: Path to the test .csproj file
+    required: true
+  results-subdir:
+    description: Subdirectory under TestResults for this test run
+    required: true
+  artifact-name:
+    description: Name of the uploaded artifact
+    required: true
+  check-name:
+    description: Title shown in GitHub Checks for test results
+    required: true
+  collect-coverage:
+    description: Whether to collect code coverage and generate an HTML report
+    required: false
+    default: 'false'
+
+runs:
+  using: composite
+  steps:
+    - name: Run tests
+      if: inputs.collect-coverage != 'true'
+      shell: bash
+      run: |
+        dotnet test "${{ inputs.test-project }}" \
+          --configuration Release \
+          --verbosity normal \
+          --results-directory "TestResults/${{ inputs.results-subdir }}" \
+          --logger "trx;LogFileName=test-results.trx" \
+          --logger "html;LogFileName=test-results.html"
+
+    - name: Run tests with coverage
+      if: inputs.collect-coverage == 'true'
+      shell: bash
+      run: |
+        dotnet test "${{ inputs.test-project }}" \
+          --configuration Release \
+          --verbosity normal \
+          --results-directory "TestResults/${{ inputs.results-subdir }}" \
+          --logger "trx;LogFileName=test-results.trx" \
+          --logger "html;LogFileName=test-results.html" \
+          --collect:"XPlat Code Coverage"
+
+    - name: Generate coverage HTML report
+      if: inputs.collect-coverage == 'true'
+      shell: bash
+      run: |
+        dotnet tool install -g dotnet-reportgenerator-globaltool
+        reportgenerator \
+          "-reports:TestResults/${{ inputs.results-subdir }}/**/coverage.cobertura.xml" \
+          "-targetdir:TestResults/${{ inputs.results-subdir }}/coverage-report" \
+          "-reporttypes:Html;HtmlSummary"
+
+    - name: Publish test results to GitHub
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      if: always()
+      with:
+        files: TestResults/${{ inputs.results-subdir }}/**/*.trx
+        check_name: ${{ inputs.check-name }}
+
+    - name: Upload test reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.artifact-name }}
+        if-no-files-found: error
+        path: |
+          TestResults/${{ inputs.results-subdir }}/**/*.trx
+          TestResults/${{ inputs.results-subdir }}/**/*.html
+
+    - name: Upload coverage HTML report
+      if: always() && inputs.collect-coverage == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: ${{ inputs.artifact-name }}-coverage
+        if-no-files-found: warn
+        path: TestResults/${{ inputs.results-subdir }}/coverage-report/
