@@ -53,40 +53,19 @@ runs:
         fi
         echo "passed=true" >> "$GITHUB_OUTPUT"
 
-    - name: Prepare lint check summary
-      id: summary
+    - name: Publish lint report to job summary
       if: always()
       shell: bash
       run: |
-        SUMMARY="${{ github.workspace }}/LintResults/${{ inputs.results-subdir }}/lint-summary.md"
-        DELIM="lint_summary_$(openssl rand -hex 8)"
-        echo "text<<${DELIM}" >> "$GITHUB_OUTPUT"
-        if [ -f "$SUMMARY" ]; then
-          cat "$SUMMARY" >> "$GITHUB_OUTPUT"
-        else
-          echo "Lint step failed before report generation." >> "$GITHUB_OUTPUT"
-        fi
-        echo "${DELIM}" >> "$GITHUB_OUTPUT"
-
-    - name: Publish lint check
-      uses: LouisBrunner/checks-action@v2.0.2
-      if: always()
-      with:
-        token: ${{ github.token }}
-        name: ${{ inputs.check-name }}
-        conclusion: ${{ steps.lint.outputs.passed == 'true' && 'success' || 'failure' }}
-        output: ${{ steps.summary.outputs.text }}
-
-    - name: Add lint report to job summary
-      if: always()
-      shell: bash
-      run: |
+        echo "# ${{ inputs.check-name }}" >> "$GITHUB_STEP_SUMMARY"
         SUMMARY="${{ github.workspace }}/LintResults/${{ inputs.results-subdir }}/lint-summary.md"
         if [ -f "$SUMMARY" ]; then
           cat "$SUMMARY" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "Download artifact **${{ inputs.artifact-name }}** for \`lint-report.html\` and JSON details." >> "$GITHUB_STEP_SUMMARY"
+        else
+          echo "Lint step failed before report generation." >> "$GITHUB_STEP_SUMMARY"
         fi
+        echo "" >> "$GITHUB_STEP_SUMMARY"
+        echo "Download artifact **${{ inputs.artifact-name }}** and open \`lint-report.html\` for full details." >> "$GITHUB_STEP_SUMMARY"
 
     - name: Upload lint reports
       if: always()
