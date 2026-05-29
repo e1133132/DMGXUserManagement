@@ -7,14 +7,53 @@ on:
 
 env:
   DOTNET_VERSION: '8.0.x'
+  SOLUTION: UserManagement.sln
   PROJECT: src/UserManagement.Api/UserManagement.Api.csproj
   PUBLISH_DIR: ./publish
 
 jobs:
+  test:
+    name: Test (pre-deploy)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      checks: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Restore
+        run: dotnet restore ${{ env.SOLUTION }}
+
+      - name: Build
+        run: dotnet build ${{ env.SOLUTION }} --configuration Release --no-restore
+
+      - name: Run unit tests with reports
+        uses: ./.github/actions/test-with-reports
+        with:
+          test-project: tests/UserManagement.UnitTests/UserManagement.UnitTests.csproj
+          results-subdir: unit
+          artifact-name: cd-unit-test-reports
+          check-name: CD Unit Test Results
+          collect-coverage: 'true'
+
+      - name: Run integration tests with reports
+        uses: ./.github/actions/test-with-reports
+        with:
+          test-project: tests/UserManagement.IntegrationTests/UserManagement.IntegrationTests.csproj
+          results-subdir: integration
+          artifact-name: cd-integration-test-reports
+          check-name: CD Integration Test Results
+          collect-coverage: 'false'
+
   deploy:
     name: Deploy to IIS
     runs-on: [self-hosted, Windows, IIS]
-    needs: []
+    needs: test
     environment: production
     steps:
       - uses: actions/checkout@v4
